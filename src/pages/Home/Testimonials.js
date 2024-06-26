@@ -6,35 +6,35 @@ import CardContent from "@mui/material/CardContent";
 import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
 
-const bull = (
-  <Box
-    component="span"
-    sx={{ display: "inline-block", mx: "2px", transform: "scale(0.8)" }}
-  >
-    •
-  </Box>
-);
+// const bull = (
+//   <Box
+//     component="span"
+//     sx={{ display: "inline-block", mx: "2px", transform: "scale(0.8)" }}
+//   >
+//     •
+//   </Box>
+// );
 
 const content = [
   {
     title: "Word of the Day",
-    word: `be${bull}nev${bull}o${bull}lent`,
+    word: `Richard Morgan`,
     type: "adjective",
     description: 'well meaning and kindly. "a benevolent smile"',
   },
   {
     title: "Word of the Day",
-    word: `in${bull}teg${bull}ri${bull}ty`,
+    word: `Consectetur Justa`,
     type: "noun",
     description:
-      "the quality of being honest and having strong moral principles.",
+      'well meaning and kindly. "a benevolent smile"',
   },
   {
     title: "Word of the Day",
-    word: `per${bull}se${bull}ver${bull}ance`,
+    word: `Robert Long`,
     type: "noun",
     description:
-      "persistence in doing something despite difficulty or delay in achieving success.",
+      'well meaning and kindly. "a benevolent smile"',
   },
 ];
 
@@ -46,7 +46,7 @@ export default function Testimonials() {
         flexDirection: "column",
         alignItems: "center",
         minHeight: "5vh",
-        backgroundColor: "#1B76F1",
+        backgroundColor: "#386DB4",
         padding: 2,
         position: "relative",
       }}
@@ -54,7 +54,7 @@ export default function Testimonials() {
       <Typography variant="h4" component="div" sx={{ color: "white", mb: 4 }}>
         Testimonials
       </Typography>
-      <Typography variant="h4" component="div" sx={{ color: "white", mb: 4 }}>
+      <Typography variant="h4" component="div" sx={{ color: "white", mb: 4, fontSize: "16px" }}>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic excepturi
         quibusdam odio deleniti reprehenderit facilis.
       </Typography>

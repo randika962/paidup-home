@@ -2,8 +2,8 @@ import React, { useState } from "react";
 import { motion } from "framer-motion";
 import { FaFacebook, FaYoutube, FaLinkedin, FaGithub } from "react-icons/fa";
 import FooterListTitle from "./FooterListTitle";
-import { paymentCard } from "../../../assets/images";
-import Image from "../../designLayouts/Image";
+// import { paymentCard } from "../../../assets/images";
+// import Image from "../../designLayouts/Image";
 
 const Footer = () => {
   const [emailInfo, setEmailInfo] = useState("");
@@ -28,7 +28,7 @@ const Footer = () => {
     }
   };
   return (
-    <div className="w-full bg-[#1B76F1] py-20">
+    <div className="w-full bg-[#386DB4] py-20">
       <div className="max-w-container mx-auto grid grid-cols-1 md:grid-cols-2 xl:grid-cols-6 px-4 gap-10">
         <div className="col-span-2">
           <FooterListTitle title="More about Paidup" />
@@ -157,12 +157,12 @@ const Footer = () => {
               </div>
             )}
 
-            <Image
+            {/* <Image
               className={`w-[80%] lg:w-[60%] mx-auto ${
                 subscription ? "mt-2" : "mt-6"
               }`}
               imgSrc={paymentCard}
-            />
+            /> */}
           </div>
         </div>
       </div>

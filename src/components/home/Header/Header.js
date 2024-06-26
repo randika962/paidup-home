@@ -47,7 +47,7 @@ const Header = () => {
                 {navBarList.map(({ _id, title, link }) => (
                   <NavLink
                     key={_id}
-                    className="flex font-normal hover:font-bold w-20 h-6 justify-center items-center px-12 text-base text-[#767676] hover:underline underline-offset-[4px] decoration-[1px] hover:text-[#262626] md:border-r-[2px] border-r-gray-300 hoverEffect last:border-r-0"
+                    className="flex font-normal hover:font-bold w-20 h-6 justify-center items-center px-12 text-base text-[#386DB4] hover:underline underline-offset-[4px] decoration-[1px] hover:text-[#386DB4] md:border-r-[2px] border-r-gray-300 hoverEffect last:border-r-0"
                     to={link}
                     state={{ data: location.pathname.split("/")[1] }}
                   >
@@ -57,7 +57,7 @@ const Header = () => {
               </motion.ul>
             )}
             <button className="bg-orange-600 hover:bg-orange-800 text-gray-200 hover:text-white cursor-pointer w-24 text-lg font-medium h-10 rounded-md duration-300 ml-4">
-              Login
+              LOG IN
             </button>
             <HiMenuAlt2
               onClick={() => setSidenav(!sidenav)}

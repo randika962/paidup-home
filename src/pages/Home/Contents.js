@@ -1,14 +1,18 @@
 import React from 'react';
 import './Contents.css';
+import { content1 } from "../../assets/images";
+import { content2 } from "../../assets/images";
+import { content3 } from "../../assets/images";
+import { content4 } from "../../assets/images";
 
 const Contents = () => {
     return (
         <div className="content-container">
             <div className="section left-align">
                 <div className="text-container">
-                    <h1>Sample Heading 1</h1>
+                    <h1 style={{ fontWeight: "bolder", fontSize: "20px" }}>Streamline Your Business Operations</h1>
                     <div className="image-container">
-                        <img src="https://designshack.net/wp-content/uploads/Modern-Blue-Illustrator-Invoice-Template.jpg" width={250} height={250} alt="Sample" />
+                        <img src={content1} width={250} height={250} alt="Sample" />
                     </div>
                     <p>This is a sample description. It provides an overview of the content.</p>
                     <p>Here is some more information about the topic covered.</p>
@@ -19,9 +23,9 @@ const Contents = () => {
 
             <div className="section right-align">
                 <div className="text-container">
-                    <h1>Sample Heading 2</h1>
+                    <h1 style={{ fontWeight: "bolder", fontSize: "20px" }}>Save Time and Reduce Errors</h1>
                     <div className="image-container">
-                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROnzX_nT6Yd8wWgrzs31i4zDOpV23oHnYt6g&s" width={250} height={250} alt="Sample" />
+                        <img src={content2} width={250} height={250} alt="Sample" />
                     </div>
                     <p>This is another sample description. It provides an overview of the content.</p>
                     <p>Here is some more information about the topic covered in the second section.</p>
@@ -32,9 +36,9 @@ const Contents = () => {
 
             <div className="section left-align">
                 <div className="text-container">
-                    <h1>Sample Heading 3</h1>
+                    <h1 style={{ fontWeight: "bolder", fontSize: "20px" }}>Professional and Customizable Template</h1>
                     <div className="image-container">
-                        <img src="https://designshack.net/wp-content/uploads/Creative-Colorful-Invoice-AI-PSD.jpg" width={250} height={250} alt="Sample" />
+                        <img src={content3} width={250} height={250} alt="Sample" />
                     </div>
                     <p>This is a third sample description. It provides an overview of the content.</p>
                     <p>Here is some more information about the topic covered in the third section.</p>
@@ -45,9 +49,9 @@ const Contents = () => {
 
             <div className="section right-align">
                 <div className="text-container">
-                    <h1>Sample Heading 4</h1>
+                    <h1 style={{ fontWeight: "bolder", fontSize: "20px" }}>Easy Sharing and Tracking</h1>
                     <div className="image-container">
-                        <img src="https://designshack.net/wp-content/uploads/Modern-Editable-Invoice-Template-for-Word.jpg" width={250} height={250} alt="Sample" />
+                        <img src={content4} width={250} height={250} alt="Sample" />
                     </div>
                     <p>This is a fourth sample description. It provides an overview of the content.</p>
                     <p>Here is some more information about the topic covered in the fourth section.</p>
