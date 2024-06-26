@@ -28,12 +28,12 @@ const Footer = () => {
     }
   };
   return (
-    <div className="w-full bg-[#F5F5F3] py-20">
-      <div className="max-w-container mx-auto grid grid-cols-1 md:grid-cols-2  xl:grid-cols-6 px-4 gap-10">
+    <div className="w-full bg-[#1B76F1] py-20">
+      <div className="max-w-container mx-auto grid grid-cols-1 md:grid-cols-2 xl:grid-cols-6 px-4 gap-10">
         <div className="col-span-2">
-          <FooterListTitle title=" More about Paidup" />
+          <FooterListTitle title="More about Paidup" />
           <div className="flex flex-col gap-6">
-            <p className="text-base w-full xl:w-[80%]">
+            <p className="text-base w-full xl:w-[80%] text-white">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim sint
               ab ullam, numquam nesciunt in.
             </p>
@@ -80,19 +80,19 @@ const Footer = () => {
         <div>
           <FooterListTitle title="Paidup" />
           <ul className="flex flex-col gap-2">
-            <li className="font-titleFont text-base text-lightText hover:text-black hover:underline decoration-[1px] decoration-gray-500 underline-offset-2 cursor-pointer duration-300">
+            <li className="font-titleFont text-base text-white hover:text-black hover:underline decoration-[1px] decoration-gray-500 underline-offset-2 cursor-pointer duration-300">
               Invoices
             </li>
-            <li className="font-titleFont text-base text-lightText hover:text-black hover:underline decoration-[1px] decoration-gray-500 underline-offset-2 cursor-pointer duration-300">
+            <li className="font-titleFont text-base text-white hover:text-black hover:underline decoration-[1px] decoration-gray-500 underline-offset-2 cursor-pointer duration-300">
               Quotations
             </li>
-            <li className="font-titleFont text-base text-lightText hover:text-black hover:underline decoration-[1px] decoration-gray-500 underline-offset-2 cursor-pointer duration-300">
+            <li className="font-titleFont text-base text-white hover:text-black hover:underline decoration-[1px] decoration-gray-500 underline-offset-2 cursor-pointer duration-300">
               Customers
             </li>
-            <li className="font-titleFont text-base text-lightText hover:text-black hover:underline decoration-[1px] decoration-gray-500 underline-offset-2 cursor-pointer duration-300">
+            <li className="font-titleFont text-base text-white hover:text-black hover:underline decoration-[1px] decoration-gray-500 underline-offset-2 cursor-pointer duration-300">
               Billing
             </li>
-            <li className="font-titleFont text-base text-lightText hover:text-black hover:underline decoration-[1px] decoration-gray-500 underline-offset-2 cursor-pointer duration-300">
+            <li className="font-titleFont text-base text-white hover:text-black hover:underline decoration-[1px] decoration-gray-500 underline-offset-2 cursor-pointer duration-300">
               Payments
             </li>
           </ul>
@@ -100,19 +100,19 @@ const Footer = () => {
         <div>
           <FooterListTitle title="Your account" />
           <ul className="flex flex-col gap-2">
-            <li className="font-titleFont text-base text-lightText hover:text-black hover:underline decoration-[1px] decoration-gray-500 underline-offset-2 cursor-pointer duration-300">
+            <li className="font-titleFont text-base text-white hover:text-black hover:underline decoration-[1px] decoration-gray-500 underline-offset-2 cursor-pointer duration-300">
               Profile
             </li>
-            <li className="font-titleFont text-base text-lightText hover:text-black hover:underline decoration-[1px] decoration-gray-500 underline-offset-2 cursor-pointer duration-300">
+            <li className="font-titleFont text-base text-white hover:text-black hover:underline decoration-[1px] decoration-gray-500 underline-offset-2 cursor-pointer duration-300">
               Orders
             </li>
-            <li className="font-titleFont text-base text-lightText hover:text-black hover:underline decoration-[1px] decoration-gray-500 underline-offset-2 cursor-pointer duration-300">
+            <li className="font-titleFont text-base text-white hover:text-black hover:underline decoration-[1px] decoration-gray-500 underline-offset-2 cursor-pointer duration-300">
               Addresses
             </li>
-            <li className="font-titleFont text-base text-lightText hover:text-black hover:underline decoration-[1px] decoration-gray-500 underline-offset-2 cursor-pointer duration-300">
+            <li className="font-titleFont text-base text-white hover:text-black hover:underline decoration-[1px] decoration-gray-500 underline-offset-2 cursor-pointer duration-300">
               Account Details
             </li>
-            <li className="font-titleFont text-base text-lightText hover:text-black hover:underline decoration-[1px] decoration-gray-500 underline-offset-2 cursor-pointer duration-300">
+            <li className="font-titleFont text-base text-white hover:text-black hover:underline decoration-[1px] decoration-gray-500 underline-offset-2 cursor-pointer duration-300">
               Payment Options
             </li>
           </ul>
@@ -120,7 +120,7 @@ const Footer = () => {
         <div className="col-span-2 flex flex-col items-center w-full px-4">
           <FooterListTitle title="Subscribe to our newsletter." />
           <div className="w-full">
-            <p className="text-center mb-4">
+            <p className="text-center mb-4 text-white">
               A at pellentesque et mattis porta enim elementum.
             </p>
             {subscription ? (

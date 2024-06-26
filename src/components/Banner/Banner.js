@@ -2,32 +2,33 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import Slider from "react-slick";
 import { bannerImgOne } from "../../assets/images";
-import Image from "../designLayouts/Image";
 
 const CustomSlide = ({ Subtext, imgSrc, text, buttonLink, buttonText }) => (
   <div
     style={{
       position: "relative",
-      backgroundColor: "#F5F5F3",
+      height: "100vh",
+      width: "100vw",
+      backgroundImage: `url(${imgSrc})`,
+      backgroundSize: "cover",
+      backgroundPosition: "center",
       display: "flex",
       justifyContent: "center",
       alignItems: "center",
-      height: "100vh",
-      width: "100vw"
+      color: "black",
     }}
   >
     <div
       style={{
+        textAlign: "center",
         maxWidth: "450px",
-        marginRight: "100px",
-        width: "100%"
+        width: "100%",
       }}
     >
       <h1
         style={{
           marginBottom: "15px",
           fontSize: "2.5rem",
-          color: "#000",
           fontWeight: "700",
         }}
       >
@@ -37,20 +38,15 @@ const CustomSlide = ({ Subtext, imgSrc, text, buttonLink, buttonText }) => (
         style={{
           marginBottom: "25px",
           fontSize: "1.5rem",
-          color: "#666",
         }}
       >
         {Subtext}
       </p>
-
       <Link to={buttonLink}>
         <button className="bg-primeColor text-white text-lg font-bodyFont w-[185px] h-[50px] hover:bg-black duration-300 font-bold">
           {buttonText}
         </button>
       </Link>
-    </div>
-    <div style={{ marginLeft: "100px", width: "100%", height: "auto" }}>
-      <Image imgSrc={imgSrc} style={{ width: "100%", height: "100%" }} />
     </div>
   </div>
 );
@@ -72,9 +68,10 @@ const Banner = () => {
       <div
         style={{
           position: "absolute",
-          top: "50%",
-          left: "7%",
-          transform: "translateY(-50%)",
+          bottom: "10px",
+          width: "100%",
+          display: "flex",
+          justifyContent: "center",
         }}
       >
         <ul style={{ margin: "0px" }}>{dots}</ul>
@@ -112,9 +109,10 @@ const Banner = () => {
             <div
               style={{
                 position: "absolute",
-                top: "50%",
-                left: "2%",
-                transform: "translateY(-50%)",
+                bottom: "10px",
+                width: "100%",
+                display: "flex",
+                justifyContent: "center",
               }}
             >
               <ul style={{ margin: "0px" }}>{dots}</ul>
