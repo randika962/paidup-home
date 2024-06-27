@@ -14,10 +14,9 @@ const Contents = () => {
                     <div className="image-container">
                         <img src={content1} width={250} height={250} alt="Sample" />
                     </div>
-                    <p>This is a sample description. It provides an overview of the content.</p>
-                    <p>Here is some more information about the topic covered.</p>
-                    <p>Additional details can help to clarify the subject matter.</p>
-                    <p>Finally, this line wraps up the sample description.</p>
+                    <p>Automate routine tasks to reduce manual effort, minimize errors, and increase</p>
+                    <p>efficiency. Our tool is user friendly, ensuring that you can create and manage invoices</p>
+                    <p>and quotations effortlessly, regardless of your skill level.</p>
                 </div>
             </div>
 
@@ -27,10 +26,9 @@ const Contents = () => {
                     <div className="image-container">
                         <img src={content2} width={250} height={250} alt="Sample" />
                     </div>
-                    <p>This is another sample description. It provides an overview of the content.</p>
-                    <p>Here is some more information about the topic covered in the second section.</p>
-                    <p>Additional details can help to clarify the subject matter in this section.</p>
-                    <p>Finally, this line wraps up the second sample description.</p>
+                    <p>Manual invoicing can be time-consuming and prone to errors. Our tool automates</p>
+                    <p>calculations for total, taxes, and discounts, ensuring accuracy and speed. Generate</p>
+                    <p>documents quickly, freeing up time for other important business activities.</p>
                 </div>
             </div>
 
@@ -40,10 +38,10 @@ const Contents = () => {
                     <div className="image-container">
                         <img src={content3} width={250} height={250} alt="Sample" />
                     </div>
-                    <p>This is a third sample description. It provides an overview of the content.</p>
-                    <p>Here is some more information about the topic covered in the third section.</p>
-                    <p>Additional details can help to clarify the subject matter in this section.</p>
-                    <p>Finally, this line wraps up the third sample description.</p>
+                    <p>First impressions matter. Our generator offers a variety of professional templates</p>
+                    <p>that can be customized to match your brand's look and feel. Add your company</p>
+                    <p>logo, adjust colors, and include personalized messages to maintain a consistent</p>
+                    <p>brand image and leave a positive impression on your clients.</p>
                 </div>
             </div>
 
@@ -53,10 +51,9 @@ const Contents = () => {
                     <div className="image-container">
                         <img src={content4} width={250} height={250} alt="Sample" />
                     </div>
-                    <p>This is a fourth sample description. It provides an overview of the content.</p>
-                    <p>Here is some more information about the topic covered in the fourth section.</p>
-                    <p>Additional details can help to clarify the subject matter in this section.</p>
-                    <p>Finally, this line wraps up the fourth sample description.</p>
+                    <p>Generate shareable links or directly email documents to clients with ease. Track</p>
+                    <p>When invoices quotations are viewed and when payments are made, ensuring</p>
+                    <p>better communication and follow-up.</p>
                 </div>
             </div>
         </div>
