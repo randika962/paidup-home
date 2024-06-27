@@ -9,7 +9,7 @@ export const navBarList = [
   {
     _id: 1002,
     title: "About",
-    link: "/about",
+    link: "/about-us",
   },
   {
     _id: 1003,

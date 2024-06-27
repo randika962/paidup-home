@@ -12,6 +12,10 @@ import Header from "./components/home/Header/Header";
 import Home from "./pages/Home/Home";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import AboutUs from "./pages/About/AboutUs";
+import Services from "./pages/Services/Services";
+import ContactUs from "./pages/Contact/ContactUs";
+import Pricing from "./pages/Pricing/Pricing";
 
 const Layout = () => {
   return (
@@ -41,6 +45,10 @@ const router = createBrowserRouter(
     <Route>
       <Route path="/" element={<Layout />}>
         <Route index element={<Home />}></Route>
+        <Route path="/about-us" element={<AboutUs />}></Route>
+        <Route path="/services" element={<Services />}></Route>
+        <Route path="/contact" element={<ContactUs />}></Route>
+        <Route path="/pricing" element={<Pricing />}></Route>
       </Route>
     </Route>
   )

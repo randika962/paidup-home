@@ -6,33 +6,18 @@ import CardContent from "@mui/material/CardContent";
 import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
 
-// const bull = (
-//   <Box
-//     component="span"
-//     sx={{ display: "inline-block", mx: "2px", transform: "scale(0.8)" }}
-//   >
-//     •
-//   </Box>
-// );
-
 const content = [
   {
-    title: "Word of the Day",
     word: `Richard Morgan`,
-    type: "adjective",
     description: 'well meaning and kindly. "a benevolent smile"',
   },
   {
-    title: "Word of the Day",
     word: `Consectetur Justa`,
-    type: "noun",
     description:
       'well meaning and kindly. "a benevolent smile"',
   },
   {
-    title: "Word of the Day",
     word: `Robert Long`,
-    type: "noun",
     description:
       'well meaning and kindly. "a benevolent smile"',
   },
@@ -72,18 +57,8 @@ export default function Testimonials() {
             sx={{ minWidth: 50, minHeight: 300, backgroundColor: "white" }}
           >
             <CardContent>
-              <Typography
-                sx={{ fontSize: 14 }}
-                color="text.secondary"
-                gutterBottom
-              >
-                {item.title}
-              </Typography>
               <Typography variant="h5" component="div">
                 {item.word}
-              </Typography>
-              <Typography sx={{ mb: 1.5 }} color="text.secondary">
-                {item.type}
               </Typography>
               <Typography variant="body2">{item.description}</Typography>
             </CardContent>
