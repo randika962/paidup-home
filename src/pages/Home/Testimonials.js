@@ -36,10 +36,10 @@ export default function Testimonials() {
         position: "relative",
       }}
     >
-      <Typography variant="h4" component="div" sx={{ color: "white", mb: 4 }}>
+      <Typography variant="h4" component="div" sx={{ color: "white", mb: 4, marginRight: "800px" }}>
         Testimonials
       </Typography>
-      <Typography variant="h4" component="div" sx={{ color: "white", mb: 4, fontSize: "16px" }}>
+      <Typography variant="h4" component="div" sx={{ color: "white", mb: 4, fontSize: "16px", marginRight: "160px" }}>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic excepturi
         quibusdam odio deleniti reprehenderit facilis.
       </Typography>

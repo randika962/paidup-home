@@ -5,9 +5,11 @@
 }
 
 .section {
-    display: flex;
     justify-content: flex-start;
     gap: 20px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
 }
 
 .left-align {
@@ -15,7 +17,6 @@
 }
 
 .right-align {
-    flex-direction: row-reverse;
     align-items: flex-end;
 }
 
@@ -23,7 +24,6 @@
     flex: 1;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
 }
 
 .image-container {

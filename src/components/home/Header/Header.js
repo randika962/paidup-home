@@ -11,12 +11,10 @@ import Image from "../../designLayouts/Image";
 const Header = () => {
   const [showMenu, setShowMenu] = useState(true);
   const [sidenav, setSidenav] = useState(false);
-  const [category, setCategory] = useState(false);
-  const [brand, setBrand] = useState(false);
   const location = useLocation();
 
   useEffect(() => {
-    let ResponsiveMenu = () => {
+    const ResponsiveMenu = () => {
       if (window.innerWidth < 667) {
         setShowMenu(false);
       } else {
@@ -25,6 +23,9 @@ const Header = () => {
     };
     ResponsiveMenu();
     window.addEventListener("resize", ResponsiveMenu);
+    return () => {
+      window.removeEventListener("resize", ResponsiveMenu);
+    };
   }, []);
 
   return (
@@ -36,29 +37,29 @@ const Header = () => {
               <Image className="w-32 object-cover" imgSrc={logo} />
             </div>
           </Link>
-          <div className="flex items-center">
+          <div className="flex items-center w-full justify-center">
             {showMenu && (
               <motion.ul
                 initial={{ y: 30, opacity: 0 }}
                 animate={{ y: 0, opacity: 1 }}
                 transition={{ duration: 0.5 }}
-                className="flex items-center w-auto z-50 p-0 gap-2"
+                className="flex items-center w-auto z-50 p-0 gap-2 justify-center"
               >
                 {navBarList.map(({ _id, title, link }) => (
                   <NavLink
                     key={_id}
-                    className="flex font-normal hover:font-bold w-20 h-6 justify-center items-center px-12 text-base text-[#386DB4] hover:underline underline-offset-[4px] decoration-[1px] hover:text-[#386DB4] md:border-r-[2px] border-r-gray-300 hoverEffect last:border-r-0"
+                    className={`flex font-bolder hover:font-bold w-20 h-6 justify-center items-center px-12 text-base ${
+                      title === "Home" ? "text-blue-600" : "text-[#386DB4]"
+                    } md:border-r-[2px] border-r-gray-300 hoverEffect last:border-r-0 no-underline`}
                     to={link}
                     state={{ data: location.pathname.split("/")[1] }}
+                    style={{ fontFamily: "Poppins" }}
                   >
                     <li>{title}</li>
                   </NavLink>
                 ))}
               </motion.ul>
             )}
-            <button className="bg-orange-600 hover:bg-orange-800 text-gray-200 hover:text-white cursor-pointer w-24 text-lg font-medium h-10 rounded-md duration-300 ml-4">
-              LOG IN
-            </button>
             <HiMenuAlt2
               onClick={() => setSidenav(!sidenav)}
               className="inline-block md:hidden cursor-pointer w-8 h-6 ml-4"
@@ -76,65 +77,21 @@ const Header = () => {
                   <ul className="text-gray-200 flex flex-col gap-2">
                     {navBarList.map((item) => (
                       <li
-                        className="font-normal hover:font-bold items-center text-lg text-gray-200 hover:underline underline-offset-[4px] decoration-[1px] hover:text-white md:border-r-[2px] border-r-gray-300 hoverEffect last:border-r-0"
+                        className="font-normal hover:font-bold items-center text-lg text-gray-200 hover:text-white md:border-r-[2px] border-r-gray-300 hoverEffect last:border-r-0 no-underline"
                         key={item._id}
+                        style={{ fontFamily: "Poppins" }}
                       >
                         <NavLink
                           to={item.link}
                           state={{ data: location.pathname.split("/")[1] }}
                           onClick={() => setSidenav(false)}
+                          className="no-underline"
                         >
                           {item.title}
                         </NavLink>
                       </li>
                     ))}
                   </ul>
-                  <div className="mt-4">
-                    <h1
-                      onClick={() => setCategory(!category)}
-                      className="flex justify-between text-base cursor-pointer items-center font-titleFont mb-2"
-                    >
-                      Shop by Category{" "}
-                      <span className="text-lg">{category ? "-" : "+"}</span>
-                    </h1>
-                    {category && (
-                      <motion.ul
-                        initial={{ y: 15, opacity: 0 }}
-                        animate={{ y: 0, opacity: 1 }}
-                        transition={{ duration: 0.4 }}
-                        className="text-sm flex flex-col gap-1"
-                      >
-                        <li className="headerSedenavLi">New Arrivals</li>
-                        <li className="headerSedenavLi">Gudgets</li>
-                        <li className="headerSedenavLi">Accessories</li>
-                        <li className="headerSedenavLi">Electronics</li>
-                        <li className="headerSedenavLi">Others</li>
-                      </motion.ul>
-                    )}
-                  </div>
-                  <div className="mt-4">
-                    <h1
-                      onClick={() => setBrand(!brand)}
-                      className="flex justify-between text-base cursor-pointer items-center font-titleFont mb-2"
-                    >
-                      Shop by Brand
-                      <span className="text-lg">{brand ? "-" : "+"}</span>
-                    </h1>
-                    {brand && (
-                      <motion.ul
-                        initial={{ y: 15, opacity: 0 }}
-                        animate={{ y: 0, opacity: 1 }}
-                        transition={{ duration: 0.4 }}
-                        className="text-sm flex flex-col gap-1"
-                      >
-                        <li className="headerSedenavLi">New Arrivals</li>
-                        <li className="headerSedenavLi">Gudgets</li>
-                        <li className="headerSedenavLi">Accessories</li>
-                        <li className="headerSedenavLi">Electronics</li>
-                        <li className="headerSedenavLi">Others</li>
-                      </motion.ul>
-                    )}
-                  </div>
                 </div>
                 <span
                   onClick={() => setSidenav(false)}

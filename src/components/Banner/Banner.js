@@ -2,8 +2,9 @@ import React from "react";
 import { Link } from "react-router-dom";
 import Slider from "react-slick";
 import { banner } from "../../assets/images";
+import { paidup2 } from "../../assets/images";
 
-const CustomSlide = ({ Subtext, imgSrc, text, buttonLink, buttonText }) => (
+const CustomSlide = ({ Subtext, imgSrc, img, text, buttonLink, buttonText }) => (
   <div
     style={{
       position: "relative",
@@ -25,6 +26,7 @@ const CustomSlide = ({ Subtext, imgSrc, text, buttonLink, buttonText }) => (
         width: "100%",
       }}
     >
+      <img src={img} alt={text} style={{ marginBottom: "20px", maxWidth: "80%" }} />
       <h1
         style={{
           marginBottom: "15px",
@@ -54,6 +56,7 @@ const CustomSlide = ({ Subtext, imgSrc, text, buttonLink, buttonText }) => (
 const Banner = () => {
   const slides = [
     {
+      img: paidup2,
       imgSrc: banner,
       text: "Experience Invoice and Quotation Generator",
       Subtext:

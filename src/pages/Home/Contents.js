@@ -34,7 +34,7 @@ const Contents = () => {
           </div>
 
           <div className="section right-align">
-            <div className="text-container">
+      
               <h1 style={{ fontWeight: "bolder", fontSize: "20px" }}>
                 Save Time and Reduce Errors
               </h1>
@@ -53,11 +53,10 @@ const Contents = () => {
                 documents quickly, freeing up time for other important business
                 activities.
               </p>
-            </div>
           </div>
 
           <div className="section left-align">
-            <div className="text-container">
+        
               <h1 style={{ fontWeight: "bolder", fontSize: "20px" }}>
                 Professional and Customizable Template
               </h1>
@@ -79,7 +78,7 @@ const Contents = () => {
               <p>
                 brand image and leave a positive impression on your clients.
               </p>
-            </div>
+            
           </div>
 
           <div className="section right-align">
@@ -376,7 +375,7 @@ const Contents = () => {
           <div className="absolute bottom-0 left-0 w-16 h-16 bg-[#386DB4] rotate-45"></div>
         </div>
       </div>
-      <div className="bg-[#386DB4] p-8 rounded-md">
+      <div className="bg-[#386DB4] p-8 w-50 rounded-md">
         <div className="flex justify-between">
           <div className="flex flex-col items-center">
             <svg
